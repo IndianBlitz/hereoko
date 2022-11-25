@@ -7,7 +7,7 @@
     type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
-    <div style="width: 640px; height: 480px" id="map"></div>
+    <div style="width: 100%; height: 90vh" id="map"></div>
     <p>Click the button to get your coordinates.</p>
 
     <button onclick="getLocation()">Try It</button>
@@ -46,7 +46,7 @@ function getLocation() {
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map,{
   center: {lat:0, lng:0},
-  zoom: 9,
+  zoom: 3,
   pixelRatio: window.devicePixelRatio || 1
 });
 
