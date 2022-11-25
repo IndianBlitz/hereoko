@@ -1,3 +1,62 @@
+const Places = [
+    {
+        name:"Bennett University",
+        lat:28.45076398954239,
+        log:77.58414410431797,
+
+    },
+    {
+        name:"The Grand Venice Mall",
+        lat:28.45615678012625,
+        log:77.5269980459973,
+    },
+    {
+        name:"TEDx",
+        lat:28.45857149793289,
+        log:77.50416708270454,
+    },
+    {
+        name:"Boomarang ",
+        lat:28.468229817540443,
+        log:77.5215048818968,
+    },
+    {
+        name:"Birondi Village",
+        lat: 28.481961220789504,
+        log:77.54210424727376,
+    },
+    {
+        name:"Samrat Mihir Bhoj Park",
+        lat:28.477887254412213,
+        log:77.52081823638423,
+    },
+    {
+        name:"B-2 Park",
+        lat:28.476378338096996,
+        log:77.5568671257939,
+    }, 
+
+    {
+        
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var latitude = 0,longitude = 0;
 
 var x=document.getElementById("demo");
@@ -32,20 +91,28 @@ getLocation();
  * @param  {H.Map} map      A HERE Map instance within the application
  */
 function addMarkersToMap(map) {
-  var parisMarker = new H.map.Marker({ lat: 48.8567, lng: 2.3508 });
-  map.addObject(parisMarker);
 
-  var romeMarker = new H.map.Marker({ lat: 41.9, lng: 12.5 });
-  map.addObject(romeMarker);
+    for(let i=0;i<Places.length;i++){
+        
+         var temp_places  = new H.map.Marker({ lat: Places[i].lat , lng: Places[i].log });
+         map.addObject(temp_places);
+    }
+    
 
-  var berlinMarker = new H.map.Marker({ lat: 52.5166, lng: 13.3833 });
-  map.addObject(berlinMarker);
+//   var parisMarker = new H.map.Marker({ lat: 48.8567, lng: 2.3508 });
+//   map.addObject(parisMarker);
 
-  var madridMarker = new H.map.Marker({ lat: 40.4, lng: -3.6833 });
-  map.addObject(madridMarker);
+//   var romeMarker = new H.map.Marker({ lat: 41.9, lng: 12.5 });
+//   map.addObject(romeMarker);
 
-  var londonMarker = new H.map.Marker({ lat: 51.5008, lng: -0.1224 });
-  map.addObject(londonMarker);
+//   var berlinMarker = new H.map.Marker({ lat: 52.5166, lng: 13.3833 });
+//   map.addObject(berlinMarker);
+
+//   var madridMarker = new H.map.Marker({ lat: 40.4, lng: -3.6833 });
+//   map.addObject(madridMarker);
+
+//   var londonMarker = new H.map.Marker({ lat: 51.5008, lng: -0.1224 });
+//   map.addObject(londonMarker);
 }
 
 
