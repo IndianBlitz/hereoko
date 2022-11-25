@@ -1,22 +1,191 @@
-.Main_Page_flex-container {
-    position: absolute;
-    top: 40%;
-    left:20%;
-    display: flex;
-    /* background-color: DodgerBlue; */
-  }
-  
-  .Main_Page_flex-container > button {
-    background-color: #f1f1f1;
-    margin-right: 60px;
-    padding: 50px;
-    font-size: 30px;
-    border-radius: 30px;
-    background-color: blueviolet;
-  
-  }
-
-button{
-    outline: none;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+body{
+  background-color: #12293B;
+}
+
+
+/* header */
+
+
+
+/* main */
+#mainPage_Ads_div{
+  position: absolute;
+  top: 200px;
+  left: 5%;
+  width: 90%;
+  height: 40vh;
+  background-color: white;
+ 
+  text-align: center;
+}
+
+#mainPage_why_Us{
+  position: absolute;
+  top: 160%;
+  left: 13%;
+  width: 70%;
+  height: 40vh;
+/*  
+  background-color: aliceblue; */
+  border: 2px solid goldenrod;
+}
+
+#mainPage_Ads_div_text{
+  color: black;
+  font-size: 10rem;
+  position: absolute;
+  top: 20%;
+  left: 20%;
   
+}
+
+.mainPage_genre_cards{
+  position: absolute;
+  top: 76%;
+  left: 7%;
+  height: 350px;
+  width: 32vh;
+  background: #203C51;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 4rem;
+  
+}
+
+
+
+.mainPage_genre_cards_text{
+  position: absolute;
+  top: 38%;
+  left: 16%;
+  color: azure;
+  font-family: 'Josefin Sans';
+font-style: normal;
+
+font-weight: 500;
+}
+
+
+
+
+
+
+.mainPage_genre_cards2{
+  position: absolute;
+  top: 76%;
+  left: 29%;
+  height: 350px;
+  width: 32vh;
+  background: #203C51;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 4rem;
+  
+}
+
+
+
+.mainPage_genre_cards_text2{
+  position: absolute;
+  top: 35%;
+  left:6%;
+  color: azure;
+  font-family: 'Josefin Sans';
+font-style: normal;
+
+font-weight: 500;
+}
+
+
+
+
+
+
+.mainPage_genre_cards3{
+  position: absolute;
+  top: 76%;
+  left: 51%;
+  height: 350px;
+  width: 32vh;
+  background: #203C51;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 4rem;
+  
+}
+
+
+
+.mainPage_genre_cards_text3{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: azure;
+  font-family: 'Josefin Sans';
+font-style: normal;
+
+font-weight: 500;
+}
+
+
+
+
+
+
+
+.mainPage_genre_cards4{
+  position: absolute;
+  top: 76%;
+  left: 74%;
+  height: 350px;
+  width: 32vh;
+  background: #203C51;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 4rem;
+  
+}
+
+
+
+.mainPage_genre_cards_text4{
+  position: absolute;
+  top: 38%;
+  left: 16%;
+  color: azure;
+  font-family: 'Josefin Sans';
+font-style: normal;
+
+font-weight: 500;
+}
+
+
+
+.mainPage_genre_cards_text_new{
+  position: absolute;
+  left:12px;
+  z-index: 12;
+  width: 48px;
+  height: 24px;
+  color: white;
+  font-size: medium;
+  background-color: rgb(31, 230, 127);
+  text-align: center;
+}
+
+.mainPage_genre_cards_text_hot{
+  position: relative;
+  left:63px;
+  z-index: 14;
+  width: 48px;
+  height: 24px;
+  color: white;
+  font-size: medium;
+  background-color: rgb(208, 0, 10);
+  text-align: center;
+}

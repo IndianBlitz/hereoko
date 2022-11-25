@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+    type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div style="width: 640px; height: 480px" id="map"></div>
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+    
+    <p id="demo"></p>
+
+
+    <script>
+var x = document.getElementById("demo");
+var latiti,longti;
+
+
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+
+
+
+
+    
+      var platform = new H.service.Platform({
+        'apikey': 'zai6zXtopj5G9qXDEs_c6Yw3nLx-mJ_9lfOADjmWyVs'
+      });
+
+      var defaultLayers = platform.createDefaultLayers();
+
+
+      
+
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.vector.normal.map,{
+  center: {lat:0, lng:0},
+  zoom: 9,
+  pixelRatio: window.devicePixelRatio || 1
+});
+
+
+
+
+window.addEventListener('resize', () => map.getViewPort().resize());
+
+//Step 3: make the map interactive
+// MapEvents enables the event system
+// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI components
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+// Now use the map as required...
+window.onload = function () {
+  moveMapToBerlin(map);
+}
+
+
+
+
+
+function showPosition(position) {
+  latiti =  position.coords.latitude;
+  longti = position.coords.longitude;
+ moveMapToUser(map)
+}
+
+function moveMapToUser(map){
+  map.setCenter({lat:latiti, lng:longti});
+ 
+}
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
