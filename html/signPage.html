@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/signPage.css">
-    <title>Document</title>
+    <title>Atline</title>
 </head>
 <body>
 
-    <div id="Login_form_div">
-        <h1 class="loginPage_welcome_text">Welcome back</h1>
+   
+
+    <div id="Sign_form_div">
+        <h1 class="SignPage_Sign_text">Sign Up</h1>
+
+
+        <img src="img/cirlce.svg" alt="error" id="Signpage_background_circle"/>
+        
         <form action="/SignIn" method="post">
+
+            <input 
+            type="text"
+            name="username"
+            placeholder="Full Name"
+            id="signPage_Full_input"
+            />
+
             <input 
             type="email"
             name="email"
@@ -22,13 +36,19 @@
             <input 
             type="password"
             name="password"
-            placeholder="password"
-            id="signPage_email_input"
+            placeholder="Password"
+            id="signPage_password_input"
             />
+
+            <label id="signPage_checkbox_text"> 
+                I agree To Terms and Conditions
+            </label>
+            <input type="checkbox" id="signPage_checkbox">
 
             <input type="submit"
             placeholder="Log In"
             id="signPage_button"
+            value="Subscribe ->"
             / >
 
 

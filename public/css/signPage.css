@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(18, 41, 59, 0.75);
+}
+
+
+#Signpage_background_circle{
+    Position: absolute;
+
+    left: 34%;
+}
+
+
+.SignPage_Sign_text{
+    position: absolute;
+    top: 14%;
+    left: 32%;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+#Sign_form_div{
+    position: absolute;
+    top: 120px;
+    width: 600px;
+    height: 700px;
+    border-radius: 50px;
+    left: 33%;
+    background: linear-gradient(12.81deg, rgba(0, 0, 0, 0.15) 7.16%, rgba(0, 0, 0, 0.0001) 92.84%), #6C5B7F;
+background-blend-mode: multiply, normal;
+box-shadow: 0px 60px 100px rgba(38, 38, 44, 0.25);
+}
+
+#signPage_Full_input{
+    width: 60%;
+    height: 37px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+   border: none;
+    background: #564767;
+    color: #C0B5CF;
+box-shadow: inset 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+#signPage_Full_input::placeholder{
+    color: #C0B5CF;
+}
+
+
+#signPage_email_input{
+    color: #C0B5CF;
+    width: 60%;
+    height: 37px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+     border: none;
+    background: #564767;
+box-shadow: inset 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+#signPage_email_input::placeholder{
+    color: #C0B5CF;
+}
+
+#signPage_password_input{
+    color: #C0B5CF;
+    width: 60%;
+    height: 37px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    border: none;
+    background: #564767;
+box-shadow: inset 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+#signPage_password_input::placeholder{
+    color: #C0B5CF;
+}
+
+
+
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+#signPage_checkbox_text{
+    position: absolute;
+    top: 60%;
+    left: 26%;
+    color:  #ffffff;
+    font-size: 1.2rem;
+}
+
+#signPage_checkbox{
+    position: absolute;
+    top: 60%;
+    left: 21%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    
+background: rgba(74, 106, 131, 0.5);
+box-shadow: inset 0px 5px 20px rgba(0, 0, 0, 0.05);
+   
+}
+
+#signPage_button{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    width: 30%;
+    height: 10%;
+    font-size: 20px;
+    color: #F9FFB7;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(3.96deg, rgba(17, 41, 59, 0.15) 3.01%, rgba(17, 41, 59, 0.0001) 96.99%), #F67280;
+background-blend-mode: multiply, normal;
+box-shadow: 0px 15px 30px rgba(51, 33, 71, 0.25);
+   display: inline-block;
+}
