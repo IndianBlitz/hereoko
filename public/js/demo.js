@@ -46,6 +46,182 @@ const Places = [
 
 
 
+const DineInn = [
+	{
+		name:"Raja Dhaba",
+		lat:28.449457850366663,
+		log:77.58380081111534,
+	},
+	{
+		name:"King’s Bar & Pub",
+		lat:28.45079735582825,
+		log:77.58039977006092,
+	},
+	{
+		name:"Jassi Da Dhaba",
+		lat:28.45192931904615,
+		log:77.57825400283416,
+	},
+	{
+		name:"Ekta Dhaba",
+		lat:28.448325860639628,
+		log:77.58902575429298,
+	},
+	{
+		name:"Food Town",
+		lat:28.444231730138796,
+		log:77.58804943020985,
+	},
+	{
+		name:"Dilli Lazeez",
+		lat:28.45278251923468,
+		log:77.57909118820447,
+	},
+	{
+		name:"The New Royal Chinese Fast Food",
+		lat:28.452412392348982,
+		log:77.57924345608706,
+	},
+	{
+		name:"Maharaja Dhaba",
+		lat:28.45488650367673,
+		log:77.58068084846063,
+	},
+	{
+		name:"Dostana Restaurant",
+		lat:28.4525363406776,
+		log:77.5757588144399,
+	},
+	{
+		name:"Radha Rani Food Service",
+		lat:28.457673330026896,
+		log:77.58010812876809,
+	},
+	{
+		name:"Saurabh Fast Food",
+		lat:28.44011556055206,
+		log:77.58486533515592,
+	},
+	{
+		name:"Bhati Hotel",
+		lat:28.44003449299218,
+		log:77.58197044599804,
+	},
+	{
+		name:"Jai Baba Mohan Ram",
+		lat:28.438283418514626,
+		log:77.58724393834306,
+	},
+	{
+		name:"Kill Humger",
+		lat:28.433582706621955,
+		log:77.5779454290141,
+	},
+	{
+		name:"Yummy Restaurant",
+		lat:28.44889246220195,
+		log:77.5689806867847,
+	},
+]
+
+
+
+const Hotels = [
+  { 
+  name: "Radisson Blu",
+  lat:28.453274417560678,
+  log:77.52859714599731,
+  },
+  {
+  name: "Bhati Hotel",
+  lat:28.4431619120645,
+  log:77.58112552745656,
+  },
+  {
+  name: "The Royals Hotel Inn",
+  lat:28.485265823701514,
+  log:77.51297596033449,
+  },
+  {
+  name: "Savoy Suites",
+  lat:28.469120428434497,
+  log:77.50971439414981,
+  },
+  {
+  name: "The Park Residency",
+  lat:28.459954146030395,
+  log:77.50339186186291,
+  },
+  {
+  name: "Happy Palace Inn",
+  lat:28.50235307880969,
+  log:77.52931272996226,
+  },
+  {
+  name: "Sunfort Hotel",
+  lat:28.47730808003759,
+  log:77.51317656041697,
+  },
+  {
+  name: "Hotel Stiltstay",
+  lat:28.50295649943883,
+  log:77.52948439134039,
+  },
+  {
+  name: "Hotel White House",
+  lat:28.50054279621735,
+  log:77.53240263476879,
+  },
+  {
+  name: "Grand Heritage Resort",
+  lat:28.48002408997708,
+  log:77.52381956586173,
+  },
+  {
+  name: "Atithi Suites",
+  lat:28.480929411102768,
+  log:77.4891439674772,
+  },
+  {
+  name: "Hotel Voyages",
+  lat:28.47942053824853,
+  log:77.47644102549475,
+  },
+  {
+  name: "Dwelling Residency",
+  lat:28.457690379312407,
+  log:77.5037351846192,
+  },
+  {
+  name: "Hotel Grand",
+  lat:28.46101055390768,
+  log:77.50390684599734,
+  },
+  {
+  name: "The Oro Homes",
+  lat:28.479269649777468,
+  log:77.53463423268462,
+  },
+  ]
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -95,8 +271,18 @@ function addMarkersToMap(map) {
     for(let i=0;i<Places.length;i++){
         
          var temp_places  = new H.map.Marker({ lat: Places[i].lat , lng: Places[i].log });
+         var temp_places2  = new H.map.Marker({ lat: DineInn[i].lat , lng: DineInn[i].log });
+         var temp_places3  = new H.map.Marker({ lat: Hotels[i].lat , lng: Hotels[i].log });
          map.addObject(temp_places);
+         map.addObject(temp_places2);
+         map.addObject(temp_places3);
     }
+
+
+
+
+
+ 
     
 
 //   var parisMarker = new H.map.Marker({ lat: 48.8567, lng: 2.3508 });
