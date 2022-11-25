@@ -103,6 +103,21 @@ app.get("/mainPage/testmap",function(req,res){
   res.sendFile(__dirname+"/html/testmap.html")
 })
 
+app.get("/mainPage/placesmap",function(req,res){
+  res.sendFile(__dirname+"/html/placesPage.html")
+})
+
+
+
+app.get("/mainPage/dineinnmap",function(req,res){
+  res.sendFile(__dirname+"/html/dineinPage.html")
+})
+
+app.get("/mainPage/hotelsnmap",function(req,res){
+  res.sendFile(__dirname+"/html/hotelPage.html")
+})
+
+
 app.listen(3000);
 
 
