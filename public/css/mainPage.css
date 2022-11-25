@@ -1,0 +1,22 @@
+.Main_Page_flex-container {
+    position: absolute;
+    top: 40%;
+    left:20%;
+    display: flex;
+    /* background-color: DodgerBlue; */
+  }
+  
+  .Main_Page_flex-container > button {
+    background-color: #f1f1f1;
+    margin-right: 60px;
+    padding: 50px;
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: blueviolet;
+  
+  }
+
+button{
+    outline: none;
+}
+  

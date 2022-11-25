@@ -11,8 +11,11 @@
 
 <body>
 
+    <img src="img/AtlineLogo.svg" id="loginPage_AtlineLogo">
     <div id="Login_form_div">
-        <h1 class="loginPage_welcome_text">Welcome back</h1>
+
+        <h1 class="loginPage_welcome_text">Welcome</h1>
+
         <form action="/" method="post">
             <input 
             type="email"
@@ -24,24 +27,30 @@
             <input 
             type="password"
             name="password"
-            placeholder="password"
+            placeholder="Password"
             id="loginPage_password_input"
             />
 
             <input type="submit"
-            placeholder="Log In"
+            placeholder="Login"
             id="loginPage_button"
+            value="Login"
             / >
-
-            <h1 id="login_newTo_text">----------------New to Atline ------------------</h1>
             
-            <a href="/SignIn"
-
+            <label id="loginPage_checkbox_text"> 
+                Remember me
+            </label>
+            <input type="checkbox" id="loginPage_checkbox">
+           
+         
+            <div id="loginPage_line"></div>
             
-            id="loginPage_Sign_button"
+            <p  id="loginPage_Sign_button">
+                Aleardy have an acoount ?
+                <a href="/SignIn" style="color:white ;">Sign up -> </a>
+            </p>
+           
             
-                
-            >Create a Account</a>
            
         </form>
 

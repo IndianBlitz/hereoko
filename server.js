@@ -95,10 +95,13 @@ createUserWithEmailAndPassword(auth, email, password)
 
 })
 
-app.get('/MainPage', function (req, res) {
+app.get('/mainPage', function (req, res) {
   res.sendFile(__dirname+"/html/mainPage.html")
 });
 
+app.get("/mainPage/testmap",function(req,res){
+  res.sendFile(__dirname+"/html/testmap.html")
+})
 
 app.listen(3000);
 
